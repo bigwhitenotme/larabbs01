@@ -25,3 +25,7 @@ config/app.php把
 Illuminate\Translation\TranslationServiceProvider::class,
 改成
 Overtrue\LaravelLang\TranslationServiceProvider::class,
+
+安装验证图片
+composer require "mews/captcha:~3.0"
+php artisan vendor:publish --provider='Mews\Captcha\CaptchaServiceProvider' 
