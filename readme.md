@@ -2,7 +2,7 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-10-12 09:30:08
- * @LastEditTime: 2019-10-12 13:23:06
+ * @LastEditTime: 2019-10-14 17:32:28
  * @LastEditors: Please set LastEditors
  -->
 git开头的代码push
@@ -29,3 +29,6 @@ Overtrue\LaravelLang\TranslationServiceProvider::class,
 安装验证图片
 composer require "mews/captcha:~3.0"
 php artisan vendor:publish --provider='Mews\Captcha\CaptchaServiceProvider' 
+
+php artisan make:request UserRequest
+表单请求验证
