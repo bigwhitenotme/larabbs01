@@ -6,6 +6,11 @@ class Topic extends Model
 {
     protected $fillable = ['title', 'body',  'category_id', 'excerpt', 'slug'];
 //'user_id','reply_count', 'view_count', 'last_reply_user_id', 'order',
+    public function replies()
+    {
+        return $this->hasMany(Reply::class);
+    }
+
     public function category()
     {
         return $this->belongsTo(Category::class);
