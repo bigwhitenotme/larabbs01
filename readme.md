@@ -2,7 +2,7 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-10-12 09:30:08
- * @LastEditTime: 2019-10-14 17:32:28
+ * @LastEditTime: 2019-10-14 23:18:56
  * @LastEditors: Please set LastEditors
  -->
 git开头的代码push
@@ -32,3 +32,7 @@ php artisan vendor:publish --provider='Mews\Captcha\CaptchaServiceProvider'
 
 php artisan make:request UserRequest
 表单请求验证
+
+
+composer require intervention/image
+安装图片裁剪
